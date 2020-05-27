@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 # In[3]:
 
-
+#importing an image
 img=cv2.imread('Lenna.png')
 
 
@@ -29,7 +29,7 @@ plt.imshow(img)
 
 # In[6]:
 
-
+#checking array of image
 iar=np.asarray(img)
 #print(iar)
 
@@ -53,6 +53,7 @@ plt.imshow(img)
 
 
 # In[10]:
+
 
 
 #taking average value and subtracting sum from 255
@@ -163,7 +164,7 @@ for i in range(256):
 
 # In[17]:
 
-
+#converting decimal intensities to 8 bit binary
 li5=[]
 for i in range(512):
     li4=[]
@@ -225,7 +226,7 @@ print(li5)
 
 # In[422]:
 
-
+#implementing GCA rules
 import itertools
 def XOR(x,y,z):
     if x!=z:
@@ -395,7 +396,7 @@ def HashFunC(L,time,RV):
 
                     x = x+1
     return j,IV
-
+#converting back to decimal 
 list1=[]
 for i in range(512):
     list2=[]
@@ -432,6 +433,7 @@ print(list1)
 #print(list1[511][511])
 #print(list1)
 #print(np.asarray(list1))
+#storing in numpy array
 abc=np.asarray(list1)
 #pqr=Image.fromarray(abc)
 #pqr.save('newlenna.png')
